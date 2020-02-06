@@ -1,12 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { LoginComponent } from "./components/Login-Component/LoginComponent";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import {BrowserRouter as  Router, Route, Switch} from 'react-router-dom';
 import  {ViewAvgGradesComponent} from '../src/pages/ViewAvgGradeComponent';
 
+
 const App = () => {
   return (
     <div className="App">
+      <Router>
+        <Switch>
+          <Route path="/login" component={ LoginComponent } />
+        </Switch>
+      </Router>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -36,6 +45,6 @@ const App = () => {
       </header>
     </div>
   );
-}
+};
 
 export default App;
