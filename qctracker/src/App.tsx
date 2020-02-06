@@ -1,10 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { LoginComponent } from "./components/Login-Component/LoginComponent";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   return (
     <div className="App">
+      <Router>
+        <Switch>
+          <Route path="/login" component={ LoginComponent } />
+        </Switch>
+      </Router>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -21,6 +30,6 @@ const App = () => {
       </header>
     </div>
   );
-}
+};
 
 export default App;
