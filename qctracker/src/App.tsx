@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter as  Router, Route, Switch} from 'react-router-dom';
+import  {ViewAvgGradesComponent} from '../src/pages/ViewAvgGradeComponent';
 
 const App = () => {
   return (
@@ -10,6 +12,15 @@ const App = () => {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
+
+        <Router>
+
+        <Switch>
+        <Route path='pages/ViewAvgGradeComponent' component={ViewAvgGradesComponent} /> 
+        </Switch>
+
+      </Router>
+        
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -18,6 +29,10 @@ const App = () => {
         >
           Learn React
         </a>
+  
+      
+      
+
       </header>
     </div>
   );
