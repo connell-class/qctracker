@@ -7,7 +7,8 @@ interface IReviewInfo {
   author: string;
   grade: number;
 }
-export class PeerReviewComponent extends React.Component<IReviewInfo, any> {
+
+export class PeerReviewDisplayComponent extends React.PureComponent<IReviewInfo> {
   render() {
     return (
       <>
