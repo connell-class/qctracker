@@ -27,8 +27,10 @@ div{
   
 }
 
+
 .landingPageForms input[type=text], .landingPageForms input[type=password], .landingPageForms input[type=email]{
   font-family: 'Syne Tactile'; 
+  
   font-size: xx-large; 
   width: 86%;
     padding: 15px;
@@ -42,6 +44,15 @@ div{
     vertical-align: middle;
     color: rgb(35, 194, 35);
   
+}
+
+input::placeholder{
+  color: gold;
+  font-family: 'Comic Sans MS';
+}
+
+.landingPageForms input.password{
+  font-family: 'wingdings';
 }
 
 .btn {
@@ -78,3 +89,4 @@ div{
   align-self: center;
 
 }
+

@@ -14,7 +14,7 @@ export const Login: React.FC = () => {
       <Form className="landingPageForms" >
         <Input type='email' name='email' placeholder='Email address' />
         <br></br>
-        <Input type='password' name='password' placeholder='Password' />
+        <Input className = 'password' type="text" name='password' placeholder='Password' />
         <br></br>
         <Input type='submit' value='Login' className="btn" />
         <br></br>

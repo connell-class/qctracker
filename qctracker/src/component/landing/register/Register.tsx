@@ -37,9 +37,9 @@ export const Register: React.FC = () => {
         <br></br>
         <Input type='email' name='email' placeholder='Email address' />
         <br></br>
-        <Input type='password' name='password' placeholder='New password' />
+        <Input className = "password" type='text' name='password' placeholder='New password' />
         <br></br>
-        <Input type='password' name='confirm' placeholder='Confirm password' />
+        <Input className = "password" type='text' name='confirm' placeholder='Confirm password' />
         <br></br>
         <Input type='submit' value='Register' className="btn" />
         <br></br>
