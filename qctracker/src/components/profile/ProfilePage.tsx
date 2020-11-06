@@ -43,6 +43,7 @@ export const ProfilePage:React.FC<IUser> = (props:IUser) => {
                         
                         </div>
                         <ReactionTable email={props.email}/>
+
                     </Col>
                 </Row>
                 : <></>}
