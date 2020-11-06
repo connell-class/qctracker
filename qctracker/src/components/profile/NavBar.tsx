@@ -1,8 +1,14 @@
 import React from "react";
 import Nav from "react-bootstrap/esm/Nav";
 import "./ProfilePage.css";
+import { SearchBar } from "./SearchBar";
 
-export const NavBar: React.FC = () => {
+interface IProps{
+  searchFunction:(input:string) => void
+}
+
+export const NavBar: React.FC<IProps> = (props:IProps) => {
+  
   return (
     <>
       <Nav variant="tabs" defaultActiveKey="/home" className="navBg">
@@ -10,8 +16,9 @@ export const NavBar: React.FC = () => {
           <Nav.Link href="/home">Home</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href="/judgement">Judgment</Nav.Link>
+          <Nav.Link href="/judgement">Judgement</Nav.Link>
         </Nav.Item>
+        <SearchBar search={props.searchFunction} />
       </Nav>
     </>
   );

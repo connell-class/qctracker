@@ -1,22 +1,16 @@
 import React, { SyntheticEvent, useEffect, useState } from "react";
 import { Table } from "reactstrap";
 import { axiosInstance } from "../../util/axiosConfig";
-import { ReactionRow } from "../ReactionRow";
+import { ReactionRow } from "./ReactionRow";
+import {Judgement} from "../model/Judgement";
 
-export interface IPost {
-  userEmail: string;
-  id: number;
-  likes: number;
- // score: number;
-  comment: string;
-  week: number;
-}
+
 interface IProps {
   email: string;
 }
 
 export const ReactionTable: React.FC<IProps> = (props: IProps) => {
-  const [reactions, setReactions] = useState<IPost[]>([]);
+  const [reactions, setReactions] = useState<Judgement[]>([]);
 
 
   const email = props.email;
@@ -28,19 +22,20 @@ export const ReactionTable: React.FC<IProps> = (props: IProps) => {
     for (const r of response.data) {
       console.log(r.data);
       const id: number = r.id;
-      const userEmail: string = r.userEmail;
-      const likes: number = r.likes;
+      const email: string = r.userEmail;
+      const upvotes: number = r.likes;
      // const score: number = r.score;
-      const comment: string = r.comment;
+      const content: string = r.comment;
       const week: number = r.week;
+      const score: number = Math.random();
       setReactions([
         ...reactions,
         {
-          userEmail,
+          email,
           id,
-          likes,
-         // score,
-          comment,
+          upvotes,
+          score,
+         content,
           week,
         },
       ]);
@@ -54,7 +49,7 @@ export const ReactionTable: React.FC<IProps> = (props: IProps) => {
 
   return (
     <div>
-      <Table>
+      <Table className="tableBg">
         <thead>
           <tr>
             <th>Week</th>

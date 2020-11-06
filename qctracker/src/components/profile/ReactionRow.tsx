@@ -1,11 +1,11 @@
 import React from 'react'
-import { IPost } from './profile/ReactionTable'
+import {Judgement} from "../model/Judgement";
 
 
 
 
 interface Iprops {
-  reaction:IPost
+  reaction:Judgement
 }
 
 export const ReactionRow: React.FC<Iprops> = (props: Iprops) => {
@@ -14,9 +14,9 @@ export const ReactionRow: React.FC<Iprops> = (props: Iprops) => {
     return (
         <tr>
             <td>{props.reaction.week}</td>
-            <td>{props.reaction.likes}</td>
-            <td>{/*props.reaction.score*/}</td>
-            <td>{props.reaction.comment}</td>
+            <td>{props.reaction.upvotes}</td>
+            <td>{props.reaction.score}</td>
+            <td>{props.reaction.content}</td>
         </tr>
     )
 }

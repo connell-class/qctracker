@@ -5,7 +5,7 @@ import { ProfilePage } from './components/profile/ProfilePage';
 function App() {
   return (
     <div className="App">
-        <ProfilePage/>
+        <ProfilePage firstName="First" lastName="Last" email="email1"/>
     </div>
   );
 }

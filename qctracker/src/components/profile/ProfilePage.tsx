@@ -4,23 +4,50 @@ import { NavBar } from "./NavBar";
 import "./ProfilePage.css";
 import { ReactionTable } from "./ReactionTable";
 import UserInfo from "./UserInfo";
+import {IUser} from "../model/IUser";
+import Axios from "axios";
+import { axiosInstance } from "../../util/axiosConfig";
 
-export const ProfilePage: React.FC = () => {
+export const ProfilePage:React.FC<IUser> = (props:IUser) => {
+
+    const [searchQuery, setSearchQuery] = React.useState("");
+    const [searchedUser, setSearchedUser] = React.useState(props);
+
+    const search = async (input:string) => {
+        setSearchQuery(input);
+
+        const pid = "/user?firstName=" + input;       //email instead maybe??? posts & user have no username
+        // const {id, name, type} =
+        const response = await axiosInstance.get("" + pid);
+
+        const matchingUser = await Axios(
+            {
+                method:'get',
+                url:'/post?username=' + input,
+            }
+        );
+        // change the searchedUsers into a list of all users that match the input...
+    }
+
     return(
         <>
-            <NavBar/>
+            <NavBar searchFunction={search}/>
             <Container>
+            {searchQuery == "" ?
                 <Row>
                     <Col className="profileBg fill">
                         <div className="margin-50">
-                        <UserInfo username="User" />
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        <ReactionTable email="email1"/>
+                        <UserInfo firstName={props.firstName} lastName={props.lastName} />
+                   
+                        
                         
                         </div>
+                        <ReactionTable email={props.email}/>
                     </Col>
                 </Row>
+                : <></>}
             </Container>
+                
         </>
     );
 }
