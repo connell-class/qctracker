@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Judgement from "./Judgement";
 import JudgementModal from "./Judgement";
-import {Container, Row} from 'reactstrap';
+import {Container, Row, Col} from 'reactstrap';
 import axios from 'axios';
 
 interface Judgement {
@@ -27,17 +27,17 @@ export const JudgementContainer: React.FC<any> = (props: any) => {
   }
 
   useEffect(()=> {
-    getJudgement
+    getJudgements();
   },[])
 
   return (
     <Container>
       <Row>
         <Col>
-        <h1>Judgements</h1>
+          <h1>Judgements</h1>
         </Col>
         <Col>
-        <JudgementModal/>
+          <JudgementModal/>
         </Col>
       </Row>
       <Row>
