@@ -10,12 +10,17 @@ interface Iprops {
 
 export const ReactionRow: React.FC<Iprops> = (props: Iprops) => {
 
-    const postList = Object.entries(props).map(([key, value])=>{
-        <td key={key}>{value.toString()}</td>
-    })
+
     return (
         <tr>
-            {postList}
+            <td>{props.reaction.week}</td>
+            <td>{props.reaction.likes}</td>
+            <td>{props.reaction.score}</td>
+            <td>{props.reaction.comment}</td>
         </tr>
     )
 }
+{/* <th>Week</th>
+<th>Likes</th>
+<th>Score</th>
+<th>Comment</th> */}

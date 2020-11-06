@@ -10,11 +10,7 @@
     "@types/node": "^12.19.3",
     "@types/react": "^16.9.56",
     "@types/react-dom": "^16.9.9",
-<<<<<<< HEAD
-    "bootstrap": "^4.5.3",
-=======
     "json-server": "^0.16.2",
->>>>>>> 0afa6c0dd989b1be6a372cf1bc5a0fb33f29ba8a
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.0",
