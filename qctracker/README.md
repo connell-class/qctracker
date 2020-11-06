@@ -13,6 +13,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm run api`
+
+Runs the JSON-Server.\
+Use the url [http://localhost:3004](http://localhost:3004) as the base URL.
+
+Current available endpoints are `/post` and `/user`
+
 ### `npm start`
 
 Runs the app in the development mode.\
