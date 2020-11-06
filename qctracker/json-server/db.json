@@ -1,0 +1,157 @@
+{
+  "post": [
+    {
+      "id": 1,
+      "likes": 5,
+      "comment": "this is a post",
+      "week": 1,
+      "userEmail": "email1"
+    },
+    {
+      "id": 2,
+      "likes": 0,
+      "comment": "nice!",
+      "week": 1,
+      "userEmail": "email2"
+    },
+    {
+      "id": 3,
+      "likes": 20,
+      "comment": "You did poorly",
+      "week": 2,
+      "userEmail": "email3"
+    },
+    {
+      "id": 4,
+      "likes": 4,
+      "comment": "Unremarkable",
+      "week": 4,
+      "userEmail": "email4"
+    },
+    {
+      "id": 5,
+      "likes": 7,
+      "comment": "Judgement has been delivered",
+      "week": 3,
+      "userEmail": "email5"
+    },
+    {
+      "id": 6,
+      "likes": 7,
+      "comment": "Good job",
+      "week": 6,
+      "userEmail": "email4"
+    },
+    {
+      "id": 7,
+      "likes": 8,
+      "comment": "You should work more on your delivery",
+      "week": 1,
+      "userEmail": "email2"
+    },
+    {
+      "id": 8,
+      "likes": 22,
+      "comment": "You were excellent!!!",
+      "week": 2,
+      "userEmail": "email1"
+    },
+    {
+      "id": 9,
+      "likes": 9,
+      "comment": "Rip Servlets",
+      "week": 3,
+      "userEmail": "email2"
+    },
+    {
+      "id": 10,
+      "likes": 8,
+      "comment": "AND YOU GET A JUDGEMENT",
+      "week": 4,
+      "userEmail": "email5"
+    },
+    {
+      "id": 11,
+      "likes": 0,
+      "comment": "You rock bro",
+      "week": "5",
+      "userEmail": "dyl@gmail.com"
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "email": "email1",
+      "firstName": "John",
+      "lastName": "Smith",
+      "password": "password"
+    },
+    {
+      "id": 2,
+      "email": "email2",
+      "firstName": "Adam",
+      "lastName": "Smith",
+      "password": "password"
+    },
+    {
+      "id": 3,
+      "email": "email3",
+      "firstName": "Sarah",
+      "lastName": "Lee",
+      "password": "password"
+    },
+    {
+      "id": 4,
+      "email": "email4",
+      "firstName": "Timothy",
+      "lastName": "Hudson",
+      "password": "password"
+    },
+    {
+      "id": 5,
+      "email": "email5",
+      "firstName": "Oprah",
+      "lastName": "Winfrey",
+      "password": "password"
+    },
+    {
+      "id": 6,
+      "email": "james@jammes.net",
+      "firstName": "James",
+      "lastName": "James",
+      "password": "wasspord"
+    },
+    {
+      "id": 69,
+      "email": "something@gmail.com"
+    },
+    {
+      "firstName": "fdgsdfg",
+      "lastName": "sgsdfgdsfgsdfgsdf",
+      "email": "dfgsdfgdsfsdfg@gmail.com",
+      "password": "a",
+      "id": 72
+    },
+    {
+      "id": 73,
+      "firstName": "dfdfgh",
+      "lastName": "ffghgjghj",
+      "email": "dhggfdhdgf@mfdgs.com",
+      "password": "a"
+    },
+    {
+      "id": 74,
+      "firstName": "adasd",
+      "lastName": "asdasd",
+      "email": "asdafsd@gmai.comdfdf",
+      "password": "a"
+    },
+    {
+      "id": 75,
+      "firstName": "asdasd",
+      "lastName": "asdasd",
+      "email": "dyl@gmail.com",
+      "password": "a"
+    }
+  ]
+}
