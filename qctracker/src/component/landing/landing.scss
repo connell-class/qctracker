@@ -6,11 +6,13 @@ $landingButtonsTextColorHover: pink;
 $buttonBackColor: lightblue;
 $buttonBackColorHover: cyan;
 
+@import url('https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap');
 div{
     background-color: $backColor;
     color: $textColor;
     
 }
+
 
 .landingPageFormField{
   
@@ -26,7 +28,9 @@ div{
 }
 
 .landingPageForms input[type=text], .landingPageForms input[type=password], .landingPageForms input[type=email]{
-    width: 86%;
+  font-family: 'Syne Tactile'; 
+  font-size: xx-large; 
+  width: 86%;
     padding: 15px;
     margin-left: auto;
     margin-right: auto;
@@ -41,6 +45,8 @@ div{
 }
 
 .btn {
+  font-family: 'Syne Tactile'; 
+  font-size: xx-large;
   background-color: palevioletred;
   color: white;
   margin-left: auto;
