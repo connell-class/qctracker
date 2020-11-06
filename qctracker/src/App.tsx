@@ -1,12 +1,21 @@
 import React from 'react';
 
 import './App.css';
+import { JudgementContainer } from './components/judgements/JudgementContainer';
+
+
+import './App.css';
 import { ProfilePage } from './components/profile/ProfilePage';
+
 
 function App() {
   return (
     <div className="App">
+
+      <JudgementContainer/>
+
         <ProfilePage firstName="First" lastName="Last" email="email1"/>
+
     </div>
 
 

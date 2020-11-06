@@ -16,6 +16,7 @@
     "axios": "^0.21.0",
     "bootstrap": "^4.5.3",
     "json-server": "^0.16.2",
+    "bootstrap": "^4.5.3",
     "node-sass": "^4.14.1",
     "react": "^17.0.1",
 
@@ -58,10 +59,10 @@
   },
   "devDependencies": {
 
-    "@types/react-bootstrap": "^0.32.24",
-    "@types/reactstrap": "^8.7.2",
+    "@types/react-router-dom": "^5.1.6",
+    "@types/reactstrap": "^8.7.2"
 
-    "@types/react-router-dom": "^5.1.6"
+    "@types/react-bootstrap": "^0.32.24",
 
   }
 }
