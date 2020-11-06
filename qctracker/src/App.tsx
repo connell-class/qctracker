@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { JudgementContainer } from './components/judgements/JudgementContainer';
+import { JudgementContainer } from './components/Judgements/JudgementContainer';
 
 function App() {
   return (
