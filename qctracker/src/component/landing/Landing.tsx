@@ -19,7 +19,7 @@ export const Landing: React.FC = () => {
        <Register/>
        <Login/>
       
-        </div>
+      </div>
   
     </body>
   )
