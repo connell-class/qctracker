@@ -1,6 +1,16 @@
 import React from 'react';
 
 import './App.css';
+import { ProfilePage } from './components/profile/ProfilePage';
+
+function App() {
+  return (
+    <div className="App">
+        <ProfilePage firstName="First" lastName="Last" email="email1"/>
+    </div>
+
+
+import './App.css';
 import { Landing } from './component/landing/Landing'
 import {
   BrowserRouter as Router,
@@ -27,6 +37,7 @@ function App() {
       </Switch>
     </Router>
     </body>
+
   );
 }
 
