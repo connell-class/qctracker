@@ -1,0 +1,95 @@
+$backColor: rgb(80, 75, 75);
+$textColor: darkorange;
+$landingButtonsTextColor: white;
+$landingButtonsBorderColor: darkorange;
+$landingButtonsTextColorHover: orange;
+$buttonBackColor: #555;
+$buttonBackColorHover: #444;
+
+div{
+    background-color: $backColor;
+    color: $textColor;
+    
+}
+.landingButtonsPanel{
+  top: 3%;
+  right: 10px;
+  width: 280px;
+  position: absolute;
+}
+.landingButtons{
+  background-color: $buttonBackColor;
+  border: 2px solid $landingButtonsBorderColor;
+  padding: 20px;
+  border-radius: 15px 50px 30px;  
+ 
+  color: $landingButtonsTextColor;
+  
+  cursor: pointer;
+  opacity: 0.8;
+  padding: 16px 20px;
+}
+.landingButtons:hover{
+    color: $landingButtonsTextColorHover;
+    background-color: $buttonBackColorHover;
+}
+
+.landingPageFormField{
+  
+ 	position: absolute;
+	top: 20%;
+  left: 40%;
+  right: 40%;
+  border: 2px solid $landingButtonsBorderColor;
+  background-color: $buttonBackColor;
+  padding: 40px;
+  vertical-align: middle;
+  
+}
+
+.landingPageForms input[type=text], .landingPageForms input[type=password], .landingPageForms input[type=email]{
+    width: 86%;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+    opacity: 1;
+    background: #f1f1f1;
+    vertical-align: middle;
+  
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: none;
+  cursor: pointer;
+  width: 96%;
+  
+  opacity: 0.8;
+
+  padding: 15px;
+ 
+}
+
+/* Add a red background color to the cancel button */
+.cancel {
+  background-color: red;
+}
+
+.imgLandingLogo{
+  display: block;
+  max-width:60%;
+  max-height:60%;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+
+}
