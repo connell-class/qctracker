@@ -18,7 +18,7 @@ export const ReactionTable: React.FC<IPost> = (props: IPost) => {
 
     const addPoke = async (eve: SyntheticEvent<HTMLFormElement>) => {
       eve.preventDefault();
-      const pid = +eve.currentTarget["/post"].value;
+      const pid = +eve.currentTarget["post"].value;
       // const {id, name, type} =
       const response = await axiosInstance.get("" + pid);
       for(const r of response.data){
