@@ -8,10 +8,9 @@ function App() {
     <div className="App">
         <ProfilePage firstName="First" lastName="Last" email="email1"/>
     </div>
+  )
 
-
-import './App.css';
-import { Landing } from './component/landing/Landing'
+//import { Landing } from './component/landing/Landing'
 import {
   BrowserRouter as Router,
   Switch,
