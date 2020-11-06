@@ -1,12 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { JudgementModal } from './components/judgements/JudgementModal';
+import { JudgementContainer } from './components/judgements/JudgementContainer';
 
 function App() {
   return (
     <div className="App">
-      <JudgementModal/>
+      <JudgementContainer/>
     </div>
   );
 }

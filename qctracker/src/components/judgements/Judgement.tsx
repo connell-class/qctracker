@@ -10,7 +10,7 @@ interface JudgeProps{
     week: number;
 }
 
-export const Judgement: React.FC<JudgeProps> = (props: JudgeProps) => {
+export const Judgement: React.FC<any> = (props: any) => {
 
     return(
         <div className="judgement">

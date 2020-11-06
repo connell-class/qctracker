@@ -15,6 +15,7 @@ export const JudgementModal: React.FC = () =>{
                 <ModalBody>
                     <Form>
                         <div>
+                        <Input type="number"></Input>    
                         <Input type="textarea" maxLength={500} rows={6} cols={50} style={{resize:"none"}}/>
                         </div>
                         <Input type="submit"/>
