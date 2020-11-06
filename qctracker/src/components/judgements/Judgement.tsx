@@ -1,7 +1,6 @@
 import React from 'react';
 import {Button} from 'reactstrap';
 
-
 interface JudgeProps{
     email: string;
     username: string;
@@ -10,7 +9,6 @@ interface JudgeProps{
     vote: number;
     week: number;
 }
-
 
 export const Judgement: React.FC<JudgeProps> = (props: JudgeProps) => {
 
