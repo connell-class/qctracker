@@ -1,10 +1,7 @@
+import axios from 'axios';
 import React, { SyntheticEvent } from 'react';
 import { Form, Input } from 'reactstrap';
 import logo from '../../../REVAJUDGE.png';
-import axios from 'axios';
-import { Redirect, useHistory } from 'react-router-dom';
-
-
 
 
 export const Login: React.FC = () => {
@@ -26,11 +23,11 @@ export const Login: React.FC = () => {
     for(let dbuser of json){
       if(dbuser.email === user.email && dbuser.password === user.password){
         console.log("Blah")
-        sessionStorage.setItem("user", dbuser)
-        window.location.href = 'http://localhost:3000/landing';
+        const whatever = JSON.stringify(dbuser);
+        sessionStorage.setItem("user", whatever)
+        window.location.href = 'http://localhost:3000/profilepage';
       }
     }
-    
     
   };
 

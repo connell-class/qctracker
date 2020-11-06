@@ -7,6 +7,7 @@ import UserInfo from "./UserInfo";
 import {IUser} from "../model/IUser";
 import Axios from "axios";
 import { axiosInstance } from "../../util/axiosConfig";
+import { JudgementContainer } from "../judgements/JudgementContainer";
 
 export const ProfilePage:React.FC<IUser> = (props:IUser) => {
 
@@ -43,7 +44,7 @@ export const ProfilePage:React.FC<IUser> = (props:IUser) => {
                         
                         </div>
                         <ReactionTable email={props.email}/>
-
+                        <JudgementContainer />
                     </Col>
                 </Row>
                 : <></>}

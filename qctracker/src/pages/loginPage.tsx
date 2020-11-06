@@ -1,6 +1,6 @@
 import React from 'react';
-import { Login } from '../component/landing/login/Login'
-import '../component/landing/landing.scss'
+// import '../component/landing/landing.scss'
+import Login from '../components/landing/login/Login';
 
 
 export function LoginPage() {
