@@ -17,12 +17,15 @@ import { RegisterPage } from './pages/registerPage'
 
 function App() {
   return (
+    <body>
     <Router>
       <Switch>
         <Route path="/login" component={LoginPage} />
         <Route path="/register" component={RegisterPage} />
+        <Route path="/" component={RegisterPage} />
       </Switch>
     </Router>
+    </body>
   );
 }
 
