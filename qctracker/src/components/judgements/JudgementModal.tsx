@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {Button, Form, Input, Modal, ModalBody, ModalHeader} from 'reactstrap';
+import {Button, DropdownMenu, Form, Input, Modal, ModalBody, ModalHeader} from 'reactstrap';
 
 export const JudgementModal: React.FC = () =>{
 
@@ -9,14 +9,26 @@ export const JudgementModal: React.FC = () =>{
 
     return(
         <div>
-            <Button color="blue" onClick={toggle}>cool button</Button>
+            <Button color="blue" onClick={toggle}>Enter Judgement</Button>
             <Modal style={{textAlign:'center'}} isOpen={modal} toggle={toggle} >
-                <ModalHeader>Judgement Header</ModalHeader>
+                <ModalHeader></ModalHeader>
                 <ModalBody>
                     <Form>
                         <div>
-                        <Input type="number"></Input>    
-                        <Input type="textarea" maxLength={500} rows={6} cols={50} style={{resize:"none"}}/>
+                            <span>Score </span><Input type="select" name="select" id="scoreSelector">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </Input>
+                            <br />
+                        <Input type="textarea" placeHolder="Enter comments" maxLength={500} rows={6} cols={50} style={{resize:"none"}} id="judgeComment"/>
                         </div>
                         <Input type="submit"/>
                     </Form>
