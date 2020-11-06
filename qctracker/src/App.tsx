@@ -22,7 +22,8 @@ function App() {
       <Switch>
         <Route path="/login" component={LoginPage} />
         <Route path="/register" component={RegisterPage} />
-        <Route path="/" component={RegisterPage} />
+        <Route exact path="/" component={RegisterPage} />
+        <Route path="/landing" component={Landing}/>
       </Switch>
     </Router>
     </body>

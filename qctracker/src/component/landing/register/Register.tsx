@@ -24,7 +24,7 @@ export const Register: React.FC = () => {
 
   return (
     <div>
-      <img src={logo} />
+      <img src={logo} className="imgLandingLogo" />
       <Form onSubmit={handleSubmit} className="landingPageForms">
         <Input type='text' name='firstName' required placeholder='First name' />
         <br></br>
