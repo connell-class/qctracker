@@ -1,3 +1,10 @@
+# npm installs required
+npm I node-sass@4.14.1\
+npm I bootstrap\
+npm install --save react-router-dom\
+npm I react-router\
+npm i reactstrap react-dom\
+npm i axios
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
