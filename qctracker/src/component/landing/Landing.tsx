@@ -8,24 +8,22 @@ import { Register } from './register/Register';
 import logo from '../../REVAJUDGE.png';
 import Login from './login/Login';
 export const Landing: React.FC = () => {
-  
 
-  
   return (
     <body>
-      <div className = "landingButtonsPanel inline">
+      <div className="landingButtonsPanel inline">
 
-        <img className = "imgLandingLogo" alt = "logo" src = {logo}/>
-       <Register/>
-       <Login/>
-      
+        <img className="imgLandingLogo" alt="logo" src={logo} />
+        <Register />
+        <Login />
+
       </div>
-  
+
     </body>
   )
 }
 
 /**
- 
-   
+
+
  */
