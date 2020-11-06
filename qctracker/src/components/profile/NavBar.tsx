@@ -1,6 +1,5 @@
 import React from "react";
 import Nav from "react-bootstrap/esm/Nav";
-import "./ProfilePage.css";
 
 export const NavBar: React.FC = () => {
   return (
