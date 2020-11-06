@@ -1,7 +1,6 @@
 import React from 'react';
 import {Button} from 'reactstrap';
 
-
 interface JudgeProps{
     email: string;
     username: string;
@@ -11,19 +10,18 @@ interface JudgeProps{
     week: number;
 }
 
-
 export const Judgement: React.FC<JudgeProps> = (props: JudgeProps) => {
 
     return(
         <div className="judgement">
             <div className="judgement-header">
                 <span className="judged-name">
-                    {${props.username} ${props.week}}
+                    {`${props.username} ${props.week}`}
                 </span>
             </div>
             <div className="judgement-body">
                 <p>
-                   {Anonymous message: ${props.content}}
+                   {`Anonymous message: ${props.content}`}
                 </p>
             </div>
             <div className="judgement-footer">
