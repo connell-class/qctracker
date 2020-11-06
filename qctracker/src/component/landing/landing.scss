@@ -1,37 +1,15 @@
-$backColor: rgb(80, 75, 75);
-$textColor: darkorange;
+$backColor: cyan;
+$textColor: pink;
 $landingButtonsTextColor: white;
-$landingButtonsBorderColor: darkorange;
-$landingButtonsTextColorHover: orange;
-$buttonBackColor: #555;
-$buttonBackColorHover: #444;
+$landingButtonsBorderColor: purple;
+$landingButtonsTextColorHover: pink;
+$buttonBackColor: lightblue;
+$buttonBackColorHover: cyan;
 
 div{
     background-color: $backColor;
     color: $textColor;
     
-}
-.landingButtonsPanel{
-  top: 3%;
-  right: 10px;
-  width: 280px;
-  position: absolute;
-}
-.landingButtons{
-  background-color: $buttonBackColor;
-  border: 2px solid $landingButtonsBorderColor;
-  padding: 20px;
-  border-radius: 15px 50px 30px;  
- 
-  color: $landingButtonsTextColor;
-  
-  cursor: pointer;
-  opacity: 0.8;
-  padding: 16px 20px;
-}
-.landingButtons:hover{
-    color: $landingButtonsTextColorHover;
-    background-color: $buttonBackColorHover;
 }
 
 .landingPageFormField{
