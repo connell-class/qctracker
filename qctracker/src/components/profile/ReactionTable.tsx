@@ -4,10 +4,10 @@ import { axiosInstance } from "../../util/axiosConfig";
 import { ReactionRow } from "../ReactionRow";
 
 export interface IPost {
-  email: string;
+  userEmail: string;
   id: number;
   likes: number;
-  score: number;
+ // score: number;
   comment: string;
   week: number;
 }
@@ -15,36 +15,42 @@ interface IProps {
   email: string;
 }
 
-export const ReactionTable: React.FC<IPost> = (props: IProps) => {
+export const ReactionTable: React.FC<IProps> = (props: IProps) => {
   const [reactions, setReactions] = useState<IPost[]>([]);
+
 
   const email = props.email;
 
-  useEffect(() => { async () => {
-    const pid = "/posts?userEmail=" + email;
+  const showTable =  async () => {
+    const pid = "/post?userEmail=" + email;
     // const {id, name, type} =
     const response = await axiosInstance.get("" + pid);
     for (const r of response.data) {
       console.log(r.data);
       const id: number = r.id;
-      const email: string = r.email;
+      const userEmail: string = r.userEmail;
       const likes: number = r.likes;
-      const score: number = r.score;
+     // const score: number = r.score;
       const comment: string = r.comment;
       const week: number = r.week;
       setReactions([
         ...reactions,
         {
-          email,
+          userEmail,
           id,
           likes,
-          score,
+         // score,
           comment,
           week,
         },
       ]);
     }
-  }});
+  };
+
+  useEffect(() => {
+    showTable();	
+    });
+  
 
   return (
     <div>

@@ -15,7 +15,7 @@ export const ReactionRow: React.FC<Iprops> = (props: Iprops) => {
         <tr>
             <td>{props.reaction.week}</td>
             <td>{props.reaction.likes}</td>
-            <td>{props.reaction.score}</td>
+            <td>{/*props.reaction.score*/}</td>
             <td>{props.reaction.comment}</td>
         </tr>
     )
