@@ -6,12 +6,15 @@ import logo from '../../../REVAJUDGE.png';
 
 export const Login: React.FC = () => {
 
-
+  const handleSubmit = (eve: SyntheticEvent<HTMLFormElement>) => {
+    sessionStorage.setItem("email", eve.currentTarget["email"].value);
+    eve.preventDefault();
+  };
 
   return (
     <div>
       <img src={logo} />
-      <Form className="landingPageForms" >
+      <Form className="landingPageForms" onSubmit={handleSubmit} >
         <Input type='email' name='email' placeholder='Email address' />
         <br></br>
         <Input className = 'password' type="text" name='password' placeholder='Password' />
