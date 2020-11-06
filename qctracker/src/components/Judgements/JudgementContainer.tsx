@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
-import Judgement from "./Judgement";
-import JudgementModal from "./Judgement";
 import {Container, Row, Col} from 'reactstrap';
-import axios from 'axios';
+import { Judgement } from "./Judgement";
+import { JudgementModal } from "./JudgementModal";
 
 interface Judgement {
   score: number;
@@ -21,12 +20,13 @@ export const JudgementContainer: React.FC<any> = (props: any) => {
 
   const [judgementArray, setJudgementArray] = React.useState([]);
 
-  const getJudgements = () => {
-      const res = await axios.get('url');
-      setJudgementArray(res);
-  }
-
+  
   useEffect(()=> {
+    const getJudgements = async () => {
+        const res = await fetch('url');
+        const data = await res.json();
+        setJudgementArray(data);
+    }
     getJudgements();
   },[])
 
@@ -50,6 +50,6 @@ export const JudgementContainer: React.FC<any> = (props: any) => {
           ))}
         </Container>
       </Row>
-    <Container/>
+    </Container>
   );
 };
