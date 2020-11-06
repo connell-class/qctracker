@@ -57,25 +57,25 @@ export const Register: React.FC = () => {
       })
     }
   }
+  return (
+    <div>
+      <img src={logo} className="imgLandingLogo" />
+      <Form onSubmit={handleSubmit} className="landingPageForms" method="POST">
+        <Input type='text' name='firstName' required placeholder='First name' />
+        <br></br>
+        <Input type='text' name='lastName' required placeholder='Last name' />
+        <br></br>
+        <Input type='email' name='email' required placeholder='Email address' />
+        <br></br>
+        <Input className="password" type='text' name='password' placeholder='New password' />
+        <br></br>
+        <Input className="password" type='text' name='confirm' placeholder='Confirm password' />
+        <br></br>
+        <Input type='submit' value='Register' className="btn" />
+        <br></br>
+        <Input type='reset' value='Close' className="btn cancel" />
+      </Form>
+    </div>
 
-  return(
-    <>
-    <img src={logo} />
-    <Form onSubmit={handleSubmit} className = "landingPageForms" method="POST">
-      <Input type='text' name='firstName' placeholder='First name'/>
-      <br></br>
-      <Input type='text' name='lastName' placeholder='Last name' />
-      <br></br>
-      <Input type='email' name='email' placeholder='Email address' />
-      <br></br>
-      <Input type='text' name='password' placeholder='New password' className ="password" />
-      <br></br>
-      <Input type='text' name='confirm' placeholder='Confirm password' className ="password"/>
-      <br></br>
-      <Input type='submit' value='Register' className = "btn"/>
-      <br></br>
-      <Input type ='reset' value = 'Reset' className = "btn cancel" />
-    </Form>
-    </>
   )
 }

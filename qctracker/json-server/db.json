@@ -108,55 +108,17 @@
       "password": "password"
     },
     {
-      "id": 6
-    },
-    {
-      "id": 7
-    },
-    {
-      "id": 8
-    },
-    {
-      "id": 9
-    },
-    {
-      "id": 10
-    },
-    {
-      "id": 11
-    },
-    {
-      "id": 12
-    },
-    {
-      "id": 13
-    },
-    {
-      "id": 14
-    },
-    {
-      "id": 15
-    },
-    {
-      "id": 16
+      "id": 6,
+      "email": "james@jammes.net",
+      "firstName": "James",
+      "lastName": "James",
+      "password": "wasspord"
     },
     {
       "id": 69,
       "email": "something@gmail.com"
     },
-    {
-      "newUserData": "{\"firstName\":\"qwerqwer\",\"lastName\":\"werqwer\",\"email\":\"werqwe@gfmgf.com\",\"password\":\"56\"}",
-      "id": 70
-    },
-    {
-      "newUser": {
-        "firstName": "asdfasdf",
-        "lastName": "sadfasdfasdfasfd",
-        "email": "sadfasdfasdf@gmIL.COMDASFASDF",
-        "password": "7"
-      },
-      "id": 71
-    },
+
     {
       "firstName": "fdgsdfg",
       "lastName": "sgsdfgdsfgsdfgsdf",
@@ -184,6 +146,7 @@
       "lastName": "asdasd",
       "email": "dyl@gmail.com",
       "password": "a"
+
     }
   ]
 }
