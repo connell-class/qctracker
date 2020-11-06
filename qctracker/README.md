@@ -1,3 +1,16 @@
+# npm installs required
+npm I node-sass@4.14.1\
+npm I bootstrap\
+npm install --save react-router-dom\
+npm I react-router\
+npm i reactstrap react-dom\
+npm i axios\
+npm i api
+
+# Getting Started
+npm run api\
+npm start
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -5,6 +18,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm run api`
+
+Runs the JSON-Server.\
+Use the url [http://localhost:3004](http://localhost:3004) as the base URL.
+
+Current available endpoints are `/post` and `/user`
 
 ### `npm start`
 

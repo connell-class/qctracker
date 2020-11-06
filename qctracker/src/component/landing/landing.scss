@@ -1,0 +1,93 @@
+$backColor: cyan;
+$textColor: pink;
+$landingButtonsTextColor: white;
+$landingButtonsBorderColor: purple;
+$landingButtonsTextColorHover: pink;
+$buttonBackColor: lightblue;
+$buttonBackColorHover: cyan;
+
+@import url('https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap');
+div{
+    background-color: $backColor;
+    
+    color: $textColor;
+    
+}
+
+
+.landingPageFormField{
+  
+ 	position: absolute;
+	top: 20%;
+  left: 40%;
+  right: 40%;
+  border: 2px solid $landingButtonsBorderColor;
+  background-color: $buttonBackColor;
+  padding: 40px;
+  vertical-align: middle;
+  
+}
+
+
+.landingPageForms input[type=text], .landingPageForms input[type=password], .landingPageForms input[type=email]{
+  font-family: 'Syne Tactile'; 
+  
+  font-size: xx-large; 
+  width: 86%;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+    opacity: 1;
+    background: orange;
+    vertical-align: middle;
+    color: rgb(35, 194, 35);
+  
+}
+
+input::placeholder{
+  color: gold;
+  font-family: 'Comic Sans MS';
+}
+
+.landingPageForms input.password{
+  font-family: 'wingdings';
+}
+
+.btn {
+  font-family: 'Syne Tactile'; 
+  font-size: xx-large;
+  background-color: palevioletred;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: none;
+  cursor: pointer;
+  width: 96%;
+  
+  opacity: 0.8;
+
+  padding: 15px;
+ 
+}
+
+/* Add a red background color to the cancel button */
+.cancel {
+  background-color: purple;
+}
+
+.imgLandingLogo{
+  display: block;
+  max-width:60%;
+  max-height:60%;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+
+}
+
