@@ -48,8 +48,8 @@ export const ReactionTable: React.FC<IProps> = (props: IProps) => {
   };
 
   useEffect(() => {
-    showTable();	
-    });
+    showTable();
+  },[]);
   
 
   return (
