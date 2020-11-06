@@ -6,6 +6,7 @@ import './landing.scss';
 import { Register } from './register/Register';
 
 import logo from '../../REVAJUDGE.png';
+import Login from './login/Login';
 export const Landing: React.FC = () => {
   
 
@@ -16,6 +17,7 @@ export const Landing: React.FC = () => {
 
         <img className = "imgLandingLogo" alt = "logo" src = {logo}/>
        <Register/>
+       <Login/>
       
         </div>
   
