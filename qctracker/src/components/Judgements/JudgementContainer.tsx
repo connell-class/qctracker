@@ -1,8 +1,7 @@
-import React, { useEffect } from "react";
-import Judgement from "./Judgement";
-import JudgementModal from "./Judgement";
-import {Container, Row, Col} from 'reactstrap';
 import axios from 'axios';
+import React, { useEffect } from "react";
+import { Col, Container, Row } from 'reactstrap';
+import { default as Judgement, default as JudgementModal } from "./judgement";
 
 interface Judgement {
   score: number;
