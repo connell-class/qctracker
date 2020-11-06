@@ -9,6 +9,10 @@
     color: white;
 }
 
+.tableBg{
+    background-color: white;
+}
+
 .width{
     min-width: 80vw;
     width: 80%;

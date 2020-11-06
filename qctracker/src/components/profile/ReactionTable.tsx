@@ -54,7 +54,7 @@ export const ReactionTable: React.FC<IProps> = (props: IProps) => {
 
   return (
     <div>
-      <Table>
+      <Table className="tableBg">
         <thead>
           <tr>
             <th>Week</th>
