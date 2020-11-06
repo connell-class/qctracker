@@ -11,22 +11,23 @@ import { axiosInstance } from "../../util/axiosConfig";
 export const ProfilePage:React.FC<IUser> = (props:IUser) => {
 
     const [searchQuery, setSearchQuery] = React.useState("");
-    const [searchedUser, setSearchedUser] = React.useState(props);
+    const [userToShow, setUSerToShow] = React.useState(props);
 
     const search = async (input:string) => {
         setSearchQuery(input);
 
-        const pid = "/user?firstName=" + input;       //email instead maybe??? posts & user have no username
-        // const {id, name, type} =
+        const pid = "/user?firstName=" + input;
         const response = await axiosInstance.get("" + pid);
 
-        const matchingUser = await Axios(
-            {
-                method:'get',
-                url:'/post?username=' + input,
-            }
-        );
-        // change the searchedUsers into a list of all users that match the input...
+        console.log(response.data);
+
+        // const matchingUser = await Axios(
+        //     {
+        //         method:'get',
+        //         url:'/post?username=' + input,
+        //     }
+        // );
+        // change the userToShow into the user that matches the input...
     }
 
     return(
@@ -37,12 +38,12 @@ export const ProfilePage:React.FC<IUser> = (props:IUser) => {
                 <Row>
                     <Col className="profileBg fill">
                         <div className="margin-50">
-                        <UserInfo firstName={props.firstName} lastName={props.lastName} />
+                        <UserInfo firstName={userToShow.firstName} lastName={userToShow.lastName} />
                    
                         
                         
                         </div>
-                        <ReactionTable email={props.email}/>
+                        <ReactionTable email={userToShow.email}/>
 
                     </Col>
                 </Row>
